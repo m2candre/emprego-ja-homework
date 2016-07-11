@@ -7,8 +7,8 @@
   <%= f.text_field :location %> <br>
   <%= f.label :category, 'Categoria' %>
   <%= f.text_field :category %> <br>
-  <%= f.label :company, 'Empresa' %>
-  <%= f.text_field :company %> <br>
+  <%= f.label :company_id, 'Empresa' %>
+  <%= f.collection_select(:company_id, @companies, :id, :name) %>
   <%= f.label :description, 'Descrição' %>
   <%= f.text_field :description %> <br>
   <%= f.check_box :featured %>
