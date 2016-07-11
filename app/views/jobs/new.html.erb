@@ -11,5 +11,7 @@
   <%= f.text_field :company %> <br>
   <%= f.label :description, 'Descrição' %>
   <%= f.text_field :description %> <br>
+  <%= f.check_box :featured %>
+  <%= f.label :featured, 'Destaque' %> <br>
   <%= f.submit "Criar Vaga"%>
 <% end %>
