@@ -1,5 +1,9 @@
 <h1>Criar Job</h1>
 
+<span class="error">
+  <%= notice %>
+</span>
+
 <%= form_for @job do |f| %>
   <%= f.label :title, "Título" %>
   <%= f.text_field :title %> <br>
