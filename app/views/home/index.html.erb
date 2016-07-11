@@ -2,7 +2,7 @@ Emprego Já
 
 <% @jobs.each do |job| %>
   <h1> 
-    <%= job.title %>
+    <%= link_to job.title, job %>
   </h1>
   
   <%= job.company %>
